@@ -1,0 +1,7 @@
+_extends: release-drafter-test:.github/release-drafter-_base.yml # extend元の設定ファイルをリポジトリ名:ファイルパスで指定
+name-template: bravo/v$RESOLVED_VERSION # リリースノートのタイトルはタグ名と同じにする
+tag-template: bravo/v$RESOLVED_VERSION # タイトルとタグ名を同じにする
+tag-prefix: bravo/v
+include-paths:
+  - "apps/bravo/"
+  - "shared/"

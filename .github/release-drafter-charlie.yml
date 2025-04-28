@@ -1,0 +1,7 @@
+_extends: release-drafter-test:.github/release-drafter-_base.yml # extend元の設定ファイルをリポジトリ名:ファイルパスで指定
+name-template: charlie/v$RESOLVED_VERSION # リリースノートのタイトルはタグ名と同じにする
+tag-template: charlie/v$RESOLVED_VERSION # タイトルとタグ名を同じにする
+tag-prefix: charlie/v
+include-paths:
+  - "apps/charlie/"
+  - "shared/"
