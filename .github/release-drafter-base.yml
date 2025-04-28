@@ -1,0 +1,27 @@
+autolabeler:
+  - label: 'alpha'
+    files:
+      - 'apps/alpha/**/*'
+  - label: 'bravo'
+    files:
+      - 'apps/bravo/**/*'
+  - label: 'charlie'
+    files:
+      - 'apps/charlie/**/*'
+  - label: 'shared'
+    files:
+      - 'shared/**/*'
+
+version-resolver:
+  major:
+    labels:
+      - "major"
+  minor:
+    labels:
+      - "feature"
+  default: "patch"
+
+template: |
+  ## Changes
+
+  $CHANGES
