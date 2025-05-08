@@ -12,15 +12,6 @@ autolabeler:
     files:
       - 'shared/**/*'
 
-version-resolver:
-  major:
-    labels:
-      - "major"
-  minor:
-    labels:
-      - "feature"
-  default: "patch"
-
 template: |
   ## Changes
 
