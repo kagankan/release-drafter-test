@@ -5,3 +5,14 @@ tag-prefix: alpha/v
 include-paths:
   - "apps/alpha/"
   - "shared/"
+
+categories:
+  - title: 'リリース前にbackendのデプロイが必要です'
+    labels:
+      - 'required: backend'
+  - title: リリースOK
+    labels:
+      - リリースOK
+  - title: その他（リリースOKか実装者に要確認）
+    labels:
+      - '*'
