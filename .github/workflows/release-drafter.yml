@@ -1,6 +1,10 @@
 name: Release Drafter
 
 on:
+  workflow_dispatch:
+    inputs:
+      comment:
+        description: '[説明用]'
   push:
     branches:
       - main
