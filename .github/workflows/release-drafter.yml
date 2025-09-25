@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       comment:
-        description: '[説明用]'
+        description: |
+          [説明用・入力不要] 特定のブランチ（PR）のVRTを実行するためのワークフローです。次の手順で実行します。
+          1. mainブランチで実行先にベースラインを作成し、
+          2. 作成したベースラインを指定して実行します。
+          3. 実行結果が表示されます。
+          4. ベースラインを削除します。
   push:
     branches:
       - main
